@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{795C9D72-20DB-F4A6-49A2-C32BC8B3D0EE}") = "Missy_Senteio_Week1", "Assembly-CSharp.csproj", "{F3FA70AB-2850-FC54-0CCF-811DDCA739F8}"
+EndProject
+Project("{795C9D72-20DB-F4A6-49A2-C32BC8B3D0EE}") = "Missy_Senteio_Week1", "Assembly-CSharp-Editor.csproj", "{A806A570-796F-8105-A173-7432EB41D516}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3FA70AB-2850-FC54-0CCF-811DDCA739F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3FA70AB-2850-FC54-0CCF-811DDCA739F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3FA70AB-2850-FC54-0CCF-811DDCA739F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3FA70AB-2850-FC54-0CCF-811DDCA739F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A806A570-796F-8105-A173-7432EB41D516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A806A570-796F-8105-A173-7432EB41D516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A806A570-796F-8105-A173-7432EB41D516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A806A570-796F-8105-A173-7432EB41D516}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
