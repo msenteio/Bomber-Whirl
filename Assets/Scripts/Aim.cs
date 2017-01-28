@@ -29,10 +29,13 @@ public class Aim : MonoBehaviour {
 	float inputAng;
 	public GameObject aim; 
 	public bool allowfire;
-	public float shotForce = 7;
+	public float shotForce = 200f;
+	public Animator bombergirl; 
 
 	// Use this for initialization
 	void Start () {
+
+		bombergirl = GetComponent<Animator> (); 
 		
 	}
 	
@@ -67,7 +70,10 @@ public class Aim : MonoBehaviour {
 	{
 		Debug.Log ("fire 1"); 
 		allowfire = false; 
-		GameObject newProjectile = Instantiate(aim, transform.position + transform.right * 1.5f, Quaternion.identity) as GameObject;
+		GameObject newProjectile = Instantiate(aim, transform.position + transform.right * 1.5f, Quaternion.identity) as GameObject; 
+		bombergirl.SetLayerWeight (0, 0); 
+		bombergirl.SetLayerWeight (1, 1);
+		bombergirl.SetLayerWeight (2, 0);
 		Rigidbody2D rb = newProjectile.GetComponent<Rigidbody2D>();
 		Vector3 direction = new Vector3(device.LeftStick.X, device.LeftStick.Y);
 		rb.AddForce(direction * shotForce, ForceMode2D.Impulse);
