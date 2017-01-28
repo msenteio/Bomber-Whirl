@@ -42,7 +42,7 @@ public class playerMovement : MonoBehaviour
 		//{
 		if((device.Action1.WasPressed) && (allowfire = true))
 		{
-			Aim();
+			Fire();
 
 		}
 
@@ -85,9 +85,10 @@ public class playerMovement : MonoBehaviour
 	} 
 	//
 
-	void Aim(){
+	void Fire(){
+		Debug.Log ("fire 1"); 
 		allowfire = false; 
-		aim = Instantiate(aim, transform.position, transform.rotation);
+		aim = Instantiate(aim, transform.position + transform.right * 1.5f, transform.rotation);
 		aim.GetComponent<Rigidbody2D>().velocity = aim.transform.right * 9;
 		Wait (); 
 		allowfire = true;
