@@ -8,6 +8,10 @@ using UnityEngine;
 
 public class Hit : MonoBehaviour {
 
+	public AudioSource winner;
+	public GameObject text; 
+		private GameObject win;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -18,11 +22,24 @@ public class Hit : MonoBehaviour {
 		
 	}
 
+	IEnumerator Wait () {
+		yield return new WaitForSeconds(3);
+			Destroy (win); 
+			Scene loadedLevel = SceneManager.GetActiveScene ();
+			SceneManager.LoadScene (loadedLevel.buildIndex);
+		Debug.Log ("wait"); 
+		} 
+
 	void OnCollisionEnter2D(Collision2D other){
 		Debug.Log("Yo");
 		if (other.gameObject.tag == "bomb") { 
-			Scene loadedLevel = SceneManager.GetActiveScene ();
-			SceneManager.LoadScene (loadedLevel.buildIndex);
+				GameObject player1 = GameObject.FindGameObjectWithTag ("player1"); 
+				win = (GameObject) Instantiate(text, player1.transform.position, Quaternion.identity);
+				win.name = "ME";
+				win.transform.parent = player1.transform;
+				winner.Play ();
+				StartCoroutine ("Wait"); 
+
 		}
 }
 }

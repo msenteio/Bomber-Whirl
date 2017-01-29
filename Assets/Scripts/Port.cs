@@ -26,9 +26,9 @@ public class Port : MonoBehaviour {
 		Debug.Log ("teleport is called");
 		Wait (); 
 //		GameObject bomb = GameObject.FindGameObjectWithTag ("bomb"); 
-		poof = (GameObject) Instantiate(teleAnimation, bomb.transform.position, Quaternion.identity);
-		poof.name = "ME";
-		poof.transform.parent = bomb.transform;
+//		poof = (GameObject) Instantiate(teleAnimation, bomb.transform.position, Quaternion.identity);
+//		poof.name = "ME";
+//		poof.transform.parent = bomb.transform;
 		Wait ();
 
 		bomb.transform.position = new Vector3 (target.transform.position.x, target.transform.position.y + adjust, 0);  

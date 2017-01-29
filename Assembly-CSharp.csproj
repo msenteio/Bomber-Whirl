@@ -431,10 +431,13 @@
      <Compile Include="Assets\Scripts\MultiplayerBasic 1\PlayerManager.cs" />
      <Compile Include="Assets\Scripts\Port.cs" />
      <Compile Include="Assets\Scripts\Rotate.cs" />
+     <Compile Include="Assets\Scripts\Scroll.cs" />
+     <Compile Include="Assets\Scripts\Scrollleft.cs" />
      <Compile Include="Assets\Scripts\Spawn.cs" />
      <Compile Include="Assets\Scripts\Teleport.cs" />
      <Compile Include="Assets\Scripts\Walk.cs" />
      <Compile Include="Assets\Scripts\Walk1.cs" />
+     <Compile Include="Assets\Scripts\Wall.cs" />
      <Compile Include="Assets\Scripts\playerMovement.cs" />
      <None Include="Assets\InControl\Readme\README.txt" />
      <None Include="Assets\Anima2D\Version.txt" />
