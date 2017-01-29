@@ -15,3 +15,7 @@
 /Users/michellesenteio/Desktop/MAGNET/Prototype/Missy_Senteio_Week1/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/michellesenteio/Desktop/MAGNET/Prototype/Missy_Senteio_Week1/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/michellesenteio/Desktop/MAGNET/Prototype/Missy_Senteio_Week1/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/michellesenteio/Desktop/MAGNET/Prototype/Missy_Senteio_Week1/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/michellesenteio/Desktop/MAGNET/Prototype/Missy_Senteio_Week1/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/michellesenteio/Desktop/MAGNET/Prototype/Missy_Senteio_Week1/obj/Debug/Assembly-CSharp.dll
+/Users/michellesenteio/Desktop/MAGNET/Prototype/Missy_Senteio_Week1/obj/Debug/Assembly-CSharp.dll.mdb

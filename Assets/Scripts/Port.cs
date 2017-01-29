@@ -44,7 +44,7 @@ public class Port : MonoBehaviour {
 			GameObject[] objs = GameObject.FindGameObjectsWithTag("portal");
 
 			foreach (GameObject obj in objs){
-				obj.transform.position = new Vector2(Random.Range(-11,11), Random.Range(1,5));
+				obj.transform.position = new Vector2(Random.Range(-8,11), Random.Range(1,5));
 		
 		} 
 	}

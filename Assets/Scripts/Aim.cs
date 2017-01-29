@@ -30,7 +30,7 @@ public class Aim : MonoBehaviour {
 	public GameObject aim; 
 	public bool allowfire;
 	public float shotForce = 200f;
-	public Animator bombergirl; 
+	private Animator bombergirl; 
 
 	// Use this for initialization
 	void Start () {
