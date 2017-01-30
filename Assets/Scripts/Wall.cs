@@ -26,7 +26,8 @@ public class Wall : MonoBehaviour {
 		poof.transform.parent = this.transform;
 		Debug.Log ("wait"); 
 		yield return new WaitForSeconds(1);
-		Destroy (this.gameObject);
+		GameObject deadbomb = this.gameObject;
+		Destroy(GameObject. Find("aim(Clone)"));
 	} 
 
 	void OnCollisionEnter2D(Collision2D other){

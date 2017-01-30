@@ -11,6 +11,7 @@ public class Hit : MonoBehaviour {
 	public AudioSource winner;
 	public GameObject text; 
 		private GameObject win;
+		public int playerId; 
 
 	// Use this for initialization
 	void Start () {
@@ -32,7 +33,7 @@ public class Hit : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D other){
 		Debug.Log("Yo");
-		if (other.gameObject.tag == "bomb") { 
+			if (other.gameObject.tag == ("bomb" + playerId)) { 
 				GameObject player1 = GameObject.FindGameObjectWithTag ("player1"); 
 				win = (GameObject) Instantiate(text, player1.transform.position, Quaternion.identity);
 				win.name = "ME";

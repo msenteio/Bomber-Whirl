@@ -37,7 +37,7 @@ public class Port : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		Debug.Log("Yo");
-		if (other.gameObject.tag == "bomb") { 
+		if (other.gameObject.tag == "bomb0" || other.gameObject.tag == "bomb1") { 
 			port.Play ();
 			teleport (other.gameObject);
 		
